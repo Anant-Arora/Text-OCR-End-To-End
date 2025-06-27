@@ -1,0 +1,6 @@
+Material Code | UOM | Quantity required | Quantity issued | Lot No.
+QEAL2ASO | KG | 472 | 18 | 6DAFOAWLOWE
+WDFV2PMK | PC | 145 | 299 | L3Q31R4701B
+IHWE8QRR | ML | 769 | 3 | 82VMA61MVUG
+PMNJ8PEA | KG | 127 | 640 | CFD4TAAJ3IV
+EGFF6GWH | EA | 2 | 22 | 9CNOEA10ZA5
