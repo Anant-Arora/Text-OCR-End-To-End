@@ -1,4 +1,4 @@
-# 🧠 Handwriting OCR to SQL Pipeline – Eugia Pharma Internship Project
+# Handwriting OCR – Aurobindo Pharma Internship Project
 
 This repository contains the full implementation of an OCR pipeline designed to extract handwritten and typed pharmaceutical tables from scanned images and automatically insert the structured data into a SQL Server database.
 
@@ -32,7 +32,7 @@ To develop a machine learning-based OCR system that:
 
 ---
 
-## 📄 Dataset Generation
+## Dataset Generation
 
 One of the biggest challenges encountered was the unavailability of a standardized, labeled dataset. Due to the sensitive and confidential nature of the pharmaceutical data involved, we were not provided with any real-world handwritten samples to train or evaluate our OCR models effectively.
 
@@ -78,7 +78,7 @@ The output of this preprocessing pipeline was a clean, binary version of the ori
 
 ---
 
-## 🔍 Models Tested
+## Models Tested
 
 We evaluated multiple OCR models to find the best fit for handwritten structured tables:
 
@@ -88,20 +88,20 @@ We evaluated multiple OCR models to find the best fit for handwritten structured
 - Tesseract delivered highly unreliable results for handwritten data.
 
 ### 2. **EasyOCR**
-- ✅ Best performance on typed text (95% accuracy)
-- ⚠️ Moderate performance on handwritten data (60%)
-- ✅ Seamless integration with Streamlit
-- ✅ Used in final typed-text pipeline
+-  Best performance on typed text (95% accuracy)
+-  Moderate performance on handwritten data (60%)
+-  Seamless integration with Streamlit
+-  Used in final typed-text pipeline
 
 ### 3. **PaddleOCR**
-- ✅ Excellent for table recognition due to structured layout support
-- ⚠️ Required extensive preprocessing and bounding box accuracy
-- ⚠️ Errors due to overlapping handwriting and low contrast
+-  Excellent for table recognition due to structured layout support
+-  Required extensive preprocessing and bounding box accuracy. One of the key challenges we faced was identifying accurate bounding boxes around handwritten entries and determining appropriate x-ranges for each column. This process required intensive preprocessing and fine-tuning, as slight deviations led to misaligned outputs. Despite the difficulty, we successfully managed to define consistent x-ranges and extract rows correctly. While PaddleOCR showed promise, it struggled with overlapping characters and low-contrast handwriting, which occasionally affected recognition accuracy.
+-  Errors due to overlapping handwriting and low contrast
 
 ### 4. **Custom CRNN + CTC**
-- ⚠️ Architecture understood but not implemented due to lack of dataset
-- ⚠️ Requires GPU and labeled handwriting dataset for training
-- ✅ Future potential if proper data is collected
+-  Architecture understood but not implemented due to lack of dataset which was not provided by the company. 
+-  Requires lot of high processor and labeled handwriting dataset for training and was difficult to run on normal laptop cpu.
+-  Future potential if proper data is collected
 
 ---
 
@@ -133,40 +133,33 @@ We evaluated multiple OCR models to find the best fit for handwritten structured
 
 ---
 
-## 💡 Key Achievements
+##  Key Achievements
 
 - Developed a full-fledged pipeline from image → SQL Server using real-world pharma tables
 - Achieved high accuracy on typed tables (95%) using EasyOCR
 - Overcame multiple bounding box and alignment issues with preprocessing
 - Built a lightweight but functional frontend interface for pharma usage
 - Improved parsing logic to handle human writing inconsistencies
+- Helped in reducing manual in the manufacturing sites
 
 ---
 
-## ⚠️ Challenges Faced
+## Challenges Faced
 
-- Handwritten entries often slanted or out of column
-- Lack of a labeled handwriting dataset prevented model fine-tuning
-- No GPU access limited the use of deep learning models
+- Handwritten entries often slanted or out of column which required lot of preprocesing to solve.
+- Lack of a labeled handwriting dataset prevented model fine-tuning which led to facing difficulty in training the model.
+- No high processor access limited the use of deep learning models.
 - Couldn’t use cloud platforms due to sensitive data concerns
 - Errors in bounding box extraction affected OCR quality
 - Human overwriting and unclear text further reduced recognition accuracy
 
 ---
 
-## 📈 Future Scope
+## Future Scope
 
 - Use high-quality, labeled handwritten datasets for training
-- Integrate GPU acceleration to enable deep model execution
+- Integrate a small scale processor acceleration to enable deep model execution
 - Experiment with layout-aware OCR like LayoutLM or DocTR
 - If permitted, deploy on cloud for scalability and auto-scaling inference
 - Improve noise removal and binarization to assist with bounding box clarity
 
----
-
-## 📷 Screenshots
-
-- 🖼️ **Preprocessed image with bounding boxes**
-- 🖥️ **Streamlit interface for document upload**
-- 🗄️ **SQL Server table with structured output**
-- (Include these in your GitHub repo under `/screenshots` folder)
