@@ -45,7 +45,7 @@ These synthetic table images consist of 5 key columns:
 - **Quantity Issued**
 - **Lot Number**
 
-![Sample Table](table_001.png)
+![Sample Table](Images/table_001.png)
 
 Each image contains 5 rows of randomized but realistic entries. To simulate handwritten-like variations, we experimented with different font styles and placements. Two batches of such images were created and paired with corresponding `.csv` label files containing the exact entries for supervised learning or evaluation.
 
@@ -75,6 +75,9 @@ To deal with scanning artifacts, stray marks, and distortions, we used noise red
 All images were first converted to grayscale to simplify processing. This step reduced the data from three color channels (RGB) to one, while retaining essential visual details. It served as the foundation for the other preprocessing operations.
 
 The output of this preprocessing pipeline was a clean, binary version of the original image—optimized for accurate OCR. Sample before-and-after images are included in this repository to illustrate the effectiveness of preprocessing.
+
+
+![Preprocesing Stage](Images/Preproces stage.png)
 
 ---
 
