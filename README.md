@@ -6,7 +6,7 @@ This project was completed as part of our internship, where the focus was on sol
 
 ---
 
-## 📌 Project Objective
+## Project Objective
 
 To develop a machine learning-based OCR system that:
 - Detects and extracts handwritten tables (Material Code, UOM, Quantity Required, Quantity Issued, Lot No.)
@@ -143,10 +143,8 @@ We evaluated multiple OCR models to find the best fit for handwritten structured
 
 - Developed a full-fledged pipeline from image → SQL Server using real-world pharma tables
 - Achieved high accuracy on typed tables (95%) using EasyOCR
-- Overcame multiple bounding box and alignment issues with preprocessing
-- Built a lightweight but functional frontend interface for pharma usage
-- Improved parsing logic to handle human writing inconsistencies
-- Helped in reducing manual in the manufacturing sites
+
+One of the key achievements of this project is the significant reduction in manual effort required to digitize handwritten or typed log sheets. Traditionally, this process involved time-consuming and error-prone data entry. With the help of our OCR pipeline, physical records can now be directly scanned, processed, and stored into structured SQL databases automatically.
 
 ---
 
