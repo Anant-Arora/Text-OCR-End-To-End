@@ -47,6 +47,7 @@ These synthetic table images consist of 5 key columns:
 
 ![Sample Table](Images/table_001.png)
 
+
 Each image contains 5 rows of randomized but realistic entries. To simulate handwritten-like variations, we experimented with different font styles and placements. Two batches of such images were created and paired with corresponding `.csv` label files containing the exact entries for supervised learning or evaluation.
 
 
