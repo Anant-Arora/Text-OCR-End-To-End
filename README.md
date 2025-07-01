@@ -80,7 +80,7 @@ All images were first converted to grayscale to simplify processing. This step r
 The output of this preprocessing pipeline was a clean, binary version of the original image—optimized for accurate OCR. Sample before-and-after images are included in this repository to illustrate the effectiveness of preprocessing.
 
 
-![Preprocesing Stage](Images/Preproces stage.png)
+![Preprocesing Stage](Images/Preprocesstage.png)
 
 ---
 
