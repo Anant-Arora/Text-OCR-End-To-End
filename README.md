@@ -1,4 +1,4 @@
-# Handwriting OCR – Aurobindo Pharma Internship Project
+# Handwriting OCR – Internship Project
 
 This repository contains the full implementation of an OCR pipeline designed to extract handwritten and typed pharmaceutical tables from scanned images and automatically insert the structured data into a SQL Server database.
 
