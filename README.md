@@ -75,6 +75,8 @@ To deal with scanning artifacts, stray marks, and distortions, we used noise red
 ### 4. Grayscaling
 All images were first converted to grayscale to simplify processing. This step reduced the data from three color channels (RGB) to one, while retaining essential visual details. It served as the foundation for the other preprocessing operations.
 
+![Sample Table](Images/Preproces stage.png)
+
 The output of this preprocessing pipeline was a clean, binary version of the original image—optimized for accurate OCR. Sample before-and-after images are included in this repository to illustrate the effectiveness of preprocessing.
 
 
